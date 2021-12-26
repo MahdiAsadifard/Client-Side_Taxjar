@@ -1,0 +1,16 @@
+.customers-div {
+    width: 100%;
+    background-color: khaki;
+    height: 100;
+}
+
+.text-box {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: khaki;
+    padding: 10px;
+}
+
+label{
+    font-weight: normal;
+}

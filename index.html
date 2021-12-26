@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./Scripts/Tax.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="jumbotron">
+            <p>
+                Select a customer and enter quantity for any items then click Submit button.
+            </p>
+        </div> -->
+        <div class="row">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td><b>Name</b></td>
+                        <td><b>Address</b></td>
+                    </tr>
+                </thead>
+                <tbody id="customer-div"></tbody>
+            </table>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td><b>Name</b></td>
+                        <td><b>Price</b></td>
+                        <td><b>Quantity</b></td>
+                        <td><b>Total (Before Tax)</b></td>
+                        <td><b>Tax</b></td>
+                        <td><b>Total (After Tax)</b></td>
+                    </tr>
+                </thead>
+                <tbody id="products-div"></tbody>
+            </table>
+            <div class="well well-lg">
+                <table class="table table-hover">
+                    <tr>
+                        <td><b>Total (Before Tax)</b></td>
+                        <td><label id="lblTotalBeforeTax">$ 0</label></td>
+                    </tr>
+                    <tr>
+                        <td><b>Shipping</b></td>
+                        <td><label id="lblShipping">$ 0</label></td>
+                    </tr>
+                    <tr>
+                        <td><b>Tax Rate</b></td>
+                        <td> <label id="lblTaxRate">% 0</label></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Total Tax</b></td>
+                        <td><label id="lblTotalTax">$ 0</label></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total (After Tax)</b></td>
+                        <td><label id="lblTotalAfterTax"><b>$ 0</b></label></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-sm-2">
+
+                    <button type="button" class="btn btn-default" id="btnClear">Clear</button>
+                    <button type="button" class="btn btn-success" id="btnCalculate">Submit</button>
+                </div>
+                <div class="col-sm-10">
+                    <div class="alert alert-dismissible" id="customAlertContainer" hidden>
+                        <a href="#" class="close">&times;</a>
+                        <label id="lblCustomAlert"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
